@@ -1,0 +1,12 @@
+{
+    "balances_xml" : {
+        "path": "Balance.xml",
+        "namespace": "iso.cbr.ru"
+    },
+    "corr_account": "40817_K1",
+    "application_amounts" : {
+        "debit_total": 90713,
+        "credit_total": 165528,
+        "difference": 4356
+    }
+}

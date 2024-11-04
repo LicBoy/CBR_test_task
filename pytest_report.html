@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">pytest_report.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">pytest_report.html</h1>
+    <p>Report generated on 04-Nov-2024 at 22:13:50 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">13 tests took 27 ms.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">10 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">3 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.0&#34;, &#34;Platform&#34;: &#34;Windows-11-10.0.22631-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.3&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;check&#34;: &#34;2.4.1&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}}, &#34;tests&#34;: {&#34;test_balance.py::TestBalanceXMLStructure::test_balance_node_exist&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceXMLStructure::test_balance_node_exist&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceXMLStructure::test_balance_node_exist&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_balance.TestBalanceXMLStructure object at 0x000001873EFB6AD0&amp;gt;, balance_xml_tree = &amp;lt;utils.xml.BalanceXML object at 0x000001873F17C440&amp;gt;\n\n    def test_balance_node_exist(self, balance_xml_tree: BalanceXML):\n        search_result = balance_xml_tree.find(&amp;quot;ns:Balance&amp;quot;)\n        logger.info(f&amp;quot;Search result for &amp;#x27;Balance&amp;#x27; node: {search_result}&amp;quot;)\n&amp;gt;       assert search_result is not None, &amp;quot;Balance XML should contain &amp;#x27;Balance&amp;#x27; as node&amp;quot;\nE       AssertionError: Balance XML should contain &amp;#x27;Balance&amp;#x27; as node\nE       assert None is not None\n\ntest_balance.py:11: AssertionError\n\n------------------------------ Captured log setup ------------------------------\nINFO     utils.logger:logger.py:14 Using config &amp;#x27;config.json&amp;#x27;\n\n------------------------------ Captured log call -------------------------------\nINFO     utils.logger:logger.py:14 Search result for &amp;#x27;Balance&amp;#x27; node: None\n\n&#34;}], &#34;test_balance.py::TestBalanceXMLStructure::test_balance_has_operation_children&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceXMLStructure::test_balance_has_operation_children&#34;, &#34;duration&#34;: &#34;5 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceXMLStructure::test_balance_has_operation_children&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;5 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;FAILURE: Balance node should contain children called &amp;#x27;Operation&amp;#x27;\nassert &amp;#x27;Operation&amp;#x27; in {&amp;#x27;Oper&amp;#x27;, &amp;#x27;StartRest&amp;#x27;}\ntest_balance.py:15 in test_balance_has_operation_children() -&amp;gt; with check:\ntest_balance.py:16 in test_balance_has_operation_children -&amp;gt; assert &amp;quot;Operation&amp;quot; in unique_child_nodes, &amp;quot;Balance node should contain children called &amp;#x27;Operation&amp;#x27;&amp;quot;\nAssertionError: Balance node should contain children called &amp;#x27;Operation&amp;#x27;\nassert &amp;#x27;Operation&amp;#x27; in {&amp;#x27;Oper&amp;#x27;, &amp;#x27;StartRest&amp;#x27;}\n\n\nFAILURE: Balance node should contain only 1 type of children which is &amp;#x27;Operation&amp;#x27;\nassert 2 == 1\n +  where 2 = len({&amp;#x27;Oper&amp;#x27;, &amp;#x27;StartRest&amp;#x27;})\n------------------------------------------------------------\nFailed Checks: 2\n&#34;}], &#34;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_attrib_date&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_attrib_date&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_attrib_date&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_balance.TestBalanceXMLStructure object at 0x000001873EE3BA80&amp;gt;, balance_xml_tree = &amp;lt;utils.xml.BalanceXML object at 0x000001873F17C440&amp;gt;\n\n    def test_operation_node_contains_attrib_date(self, balance_xml_tree: BalanceXML):\n        check_result, check_descr = balance_xml_tree.check_all_operation_nodes_contain_date()\n&amp;gt;       assert check_result, \\\n            f&amp;quot;All nodes should contain attribute &amp;#x27;date&amp;#x27;. Found nodes without it: {check_descr}!&amp;quot;\nE       AssertionError: All nodes should contain attribute &amp;#x27;date&amp;#x27;. Found nodes without it: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540]!\nE       assert False\n\ntest_balance.py:22: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     utils.logger:logger.py:14 Checking that nodes &amp;#x27;ns:Ballance/ns:Oper&amp;#x27; contain attribute &amp;#x27;date&amp;#x27;\nINFO     utils.logger:logger.py:14 Ids of nodes, which do not contain specified attribute: &amp;#x27;[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540]&amp;#x27;\n\n&#34;}], &#34;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_attrib_corAcc&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_attrib_corAcc&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_attrib_corAcc&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_balance.TestBalanceXMLStructure object at 0x000001873EE3BCE0&amp;gt;, balance_xml_tree = &amp;lt;utils.xml.BalanceXML object at 0x000001873F17C440&amp;gt;\n\n    def test_operation_node_contains_attrib_corAcc(self, balance_xml_tree: BalanceXML):\n        check_result, check_descr = balance_xml_tree.check_all_operation_nodes_contain_corr_acc()\n&amp;gt;       assert check_result, \\\n            f&amp;quot;All nodes should contain attribute &amp;#x27;corAcc&amp;#x27;. Found nodes without it: {check_descr}!&amp;quot;\nE       AssertionError: All nodes should contain attribute &amp;#x27;corAcc&amp;#x27;. Found nodes without it: [3, 5, 7, 8, 9, 12, 14, 15, 18, 19, 20, 23, 24, 28, 30, 33, 35, 42, 43, 44, 45, 46, 48, 49, 51, 52, 53, 54, 55, 56, 57, 59, 61, 65, 66, 67, 69, 71, 73, 76, 77, 78, 79, 80, 85, 86, 87, 89, 91, 92, 93, 95, 96, 100, 103, 104, 107, 110, 112, 116, 118, 119, 120, 126, 127, 128, 129, 130, 131, 132, 133, 135, 136, 139, 140, 141, 143, 146, 147, 149, 150, 151, 154, 155, 158, 161, 162, 165, 167, 168, 169, 175, 181, 185, 186, 188, 190, 191, 192, 193, 196, 198, 199, 202, 203, 205, 206, 209, 210, 211, 212, 213, 216, 226, 227, 228, 229, 230, 231, 234, 239, 242, 245, 247, 250, 251, 253, 255, 256, 258, 261, 266, 267, 268, 269, 271, 272, 273, 274, 278, 279, 281, 282, 283, 284, 286, 288, 291, 295, 296, 297, 300, 302, 304, 306, 307, 308, 309, 310, 312, 317, 318, 321, 322, 323, 324, 325, 328, 330, 334, 335, 336, 337, 338, 344, 346, 349, 350, 352, 354, 361, 363, 366, 367, 370, 374, 376, 377, 379, 380, 381, 383, 384, 385, 387, 388, 390, 391, 398, 400, 401, 402, 403, 404, 406, 407, 409, 411, 414, 421, 422, 423, 424, 425, 427, 430, 435, 440, 441, 442, 444, 445, 449, 451, 452, 453, 454, 456, 460, 461, 462, 465, 468, 469, 471, 477, 478, 479, 481, 483, 484, 486, 487, 490, 493, 494, 496, 497, 499, 500, 501, 502, 503, 512, 515, 516, 517, 518, 519, 522, 526, 532, 537]!\nE       assert False\n\ntest_balance.py:27: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     utils.logger:logger.py:14 Checking that nodes &amp;#x27;ns:Ballance/ns:Oper&amp;#x27; contain attribute &amp;#x27;corAcc&amp;#x27;\nINFO     utils.logger:logger.py:14 Ids of nodes, which do not contain specified attribute: &amp;#x27;[3, 5, 7, 8, 9, 12, 14, 15, 18, 19, 20, 23, 24, 28, 30, 33, 35, 42, 43, 44, 45, 46, 48, 49, 51, 52, 53, 54, 55, 56, 57, 59, 61, 65, 66, 67, 69, 71, 73, 76, 77, 78, 79, 80, 85, 86, 87, 89, 91, 92, 93, 95, 96, 100, 103, 104, 107, 110, 112, 116, 118, 119, 120, 126, 127, 128, 129, 130, 131, 132, 133, 135, 136, 139, 140, 141, 143, 146, 147, 149, 150, 151, 154, 155, 158, 161, 162, 165, 167, 168, 169, 175, 181, 185, 186, 188, 190, 191, 192, 193, 196, 198, 199, 202, 203, 205, 206, 209, 210, 211, 212, 213, 216, 226, 227, 228, 229, 230, 231, 234, 239, 242, 245, 247, 250, 251, 253, 255, 256, 258, 261, 266, 267, 268, 269, 271, 272, 273, 274, 278, 279, 281, 282, 283, 284, 286, 288, 291, 295, 296, 297, 300, 302, 304, 306, 307, 308, 309, 310, 312, 317, 318, 321, 322, 323, 324, 325, 328, 330, 334, 335, 336, 337, 338, 344, 346, 349, 350, 352, 354, 361, 363, 366, 367, 370, 374, 376, 377, 379, 380, 381, 383, 384, 385, 387, 388, 390, 391, 398, 400, 401, 402, 403, 404, 406, 407, 409, 411, 414, 421, 422, 423, 424, 425, 427, 430, 435, 440, 441, 442, 444, 445, 449, 451, 452, 453, 454, 456, 460, 461, 462, 465, 468, 469, 471, 477, 478, 479, 481, 483, 484, 486, 487, 490, 493, 494, 496, 497, 499, 500, 501, 502, 503, 512, 515, 516, 517, 518, 519, 522, 526, 532, 537]&amp;#x27;\n\n&#34;}], &#34;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_attrib_one_of_dbt_cdt&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_attrib_one_of_dbt_cdt&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_attrib_one_of_dbt_cdt&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_balance.TestBalanceXMLStructure object at 0x000001873F16CEF0&amp;gt;, balance_xml_tree = &amp;lt;utils.xml.BalanceXML object at 0x000001873F17C440&amp;gt;\n\n    def test_operation_node_contains_attrib_one_of_dbt_cdt(self, balance_xml_tree: BalanceXML):\n        check_result, check_descr = balance_xml_tree.check_all_operation_nodes_contain_dbt_or_cdt()\n&amp;gt;       assert check_result, \\\n            f&amp;quot;All nodes should contain only one of attributes &amp;#x27;dbt&amp;#x27; or &amp;#x27;cdt&amp;#x27;. Found bad nodes: {check_descr}!&amp;quot;\nE       AssertionError: All nodes should contain only one of attributes &amp;#x27;dbt&amp;#x27; or &amp;#x27;cdt&amp;#x27;. Found bad nodes: [1, 2, 4, 6, 10, 11, 13, 16, 17, 21, 22, 25, 26, 27, 29, 31, 32, 34, 36, 37, 38, 39, 40, 41, 47, 50, 58, 60, 62, 63, 64, 68, 70, 72, 74, 75, 81, 82, 83, 84, 88, 90, 94, 97, 98, 99, 101, 102, 105, 106, 108, 109, 111, 113, 114, 115, 117, 121, 122, 123, 124, 125, 134, 137, 138, 142, 144, 145, 148, 152, 153, 156, 157, 159, 160, 163, 164, 166, 170, 171, 172, 173, 174, 176, 177, 178, 179, 180, 182, 183, 184, 187, 189, 194, 195, 197, 200, 201, 204, 207, 208, 214, 215, 217, 218, 219, 220, 221, 222, 223, 224, 225, 232, 233, 235, 236, 237, 238, 240, 241, 243, 244, 246, 248, 249, 252, 254, 257, 259, 260, 262, 263, 264, 265, 270, 275, 276, 277, 280, 285, 287, 289, 290, 292, 293, 294, 298, 299, 301, 303, 305, 311, 313, 314, 315, 316, 319, 320, 326, 327, 329, 331, 332, 333, 339, 340, 341, 342, 343, 345, 347, 348, 351, 353, 355, 356, 357, 358, 359, 360, 362, 364, 365, 368, 369, 371, 372, 373, 375, 378, 382, 386, 389, 392, 393, 394, 395, 396, 397, 399, 405, 408, 410, 412, 413, 415, 416, 417, 418, 419, 420, 426, 428, 429, 431, 432, 433, 434, 436, 437, 438, 439, 443, 446, 447, 448, 450, 455, 457, 458, 459, 463, 464, 466, 467, 470, 472, 473, 474, 475, 476, 480, 482, 485, 488, 489, 491, 492, 495, 498, 504, 505, 506, 507, 508, 509, 510, 511, 513, 514, 520, 521, 523, 524, 525, 527, 528, 529, 530, 531, 533, 534, 535, 536, 538, 539, 540]!\nE       assert False\n\ntest_balance.py:32: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     utils.logger:logger.py:14 Checking that nodes &amp;#x27;ns:Ballance/ns:Oper&amp;#x27; contain only one attribute of &amp;#x27;(&amp;#x27;dbt&amp;#x27;, &amp;#x27;cdt&amp;#x27;)&amp;#x27;\nINFO     utils.logger:logger.py:14 Ids of nodes, which contain not one attribute: &amp;#x27;[1, 2, 4, 6, 10, 11, 13, 16, 17, 21, 22, 25, 26, 27, 29, 31, 32, 34, 36, 37, 38, 39, 40, 41, 47, 50, 58, 60, 62, 63, 64, 68, 70, 72, 74, 75, 81, 82, 83, 84, 88, 90, 94, 97, 98, 99, 101, 102, 105, 106, 108, 109, 111, 113, 114, 115, 117, 121, 122, 123, 124, 125, 134, 137, 138, 142, 144, 145, 148, 152, 153, 156, 157, 159, 160, 163, 164, 166, 170, 171, 172, 173, 174, 176, 177, 178, 179, 180, 182, 183, 184, 187, 189, 194, 195, 197, 200, 201, 204, 207, 208, 214, 215, 217, 218, 219, 220, 221, 222, 223, 224, 225, 232, 233, 235, 236, 237, 238, 240, 241, 243, 244, 246, 248, 249, 252, 254, 257, 259, 260, 262, 263, 264, 265, 270, 275, 276, 277, 280, 285, 287, 289, 290, 292, 293, 294, 298, 299, 301, 303, 305, 311, 313, 314, 315, 316, 319, 320, 326, 327, 329, 331, 332, 333, 339, 340, 341, 342, 343, 345, 347, 348, 351, 353, 355, 356, 357, 358, 359, 360, 362, 364, 365, 368, 369, 371, 372, 373, 375, 378, 382, 386, 389, 392, 393, 394, 395, 396, 397, 399, 405, 408, 410, 412, 413, 415, 416, 417, 418, 419, 420, 426, 428, 429, 431, 432, 433, 434, 436, 437, 438, 439, 443, 446, 447, 448, 450, 455, 457, 458, 459, 463, 464, 466, 467, 470, 472, 473, 474, 475, 476, 480, 482, 485, 488, 489, 491, 492, 495, 498, 504, 505, 506, 507, 508, 509, 510, 511, 513, 514, 520, 521, 523, 524, 525, 527, 528, 529, 530, 531, 533, 534, 535, 536, 538, 539, 540]&amp;#x27;\n\n&#34;}], &#34;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_subNode_with_status&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_subNode_with_status&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceXMLStructure::test_operation_node_contains_subNode_with_status&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     utils.logger:logger.py:14 Checking that nodes &amp;#x27;ns:Ballance/ns:Oper&amp;#x27; contain child node &amp;#x27;Status&amp;#x27;\nINFO     utils.logger:logger.py:14 All nodes contain specified child&amp;#x27;\n\n&#34;}], &#34;test_balance.py::TestBalanceBusinessLogic::test_all_operations_happened_one_date&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceBusinessLogic::test_all_operations_happened_one_date&#34;, &#34;duration&#34;: &#34;13 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceBusinessLogic::test_all_operations_happened_one_date&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;13 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_balance.TestBalanceBusinessLogic object at 0x000001873EFB6D50&amp;gt;, balance = Balance()\n\n    def test_all_operations_happened_one_date(self, balance: Balance):\n        unique_dates = balance.get_unique_dates()\n&amp;gt;       assert len(unique_dates) == 1, \\\n            f&amp;quot;Expected all operations to happen on one date, but found multiple: {unique_dates}!&amp;quot;\nE       AssertionError: Expected all operations to happen on one date, but found multiple: {&amp;#x27;03-03-2021&amp;#x27;, &amp;#x27;05-03-2021&amp;#x27;, &amp;#x27;05-05-2021&amp;#x27;, &amp;#x27;03-05-2021&amp;#x27;}!\nE       assert 4 == 1\nE        +  where 4 = len({&amp;#x27;03-03-2021&amp;#x27;, &amp;#x27;03-05-2021&amp;#x27;, &amp;#x27;05-03-2021&amp;#x27;, &amp;#x27;05-05-2021&amp;#x27;})\n\ntest_balance.py:45: AssertionError\n\n------------------------------ Captured log setup ------------------------------\nINFO     utils.logger:logger.py:14 Successfully parsed XML to Balance object with Operation entities\nINFO     utils.logger:logger.py:14 Checking that each operation is either debit or credit\nINFO     utils.logger:logger.py:14 All operations are either debit or credit!\nINFO     utils.logger:logger.py:14 Checking that each operation is valid ( &amp;gt; 0)\nINFO     utils.logger:logger.py:14 All operations have valid amount!\nINFO     utils.logger:logger.py:14 Total debit amount is &amp;#x27;60717&amp;#x27;\nINFO     utils.logger:logger.py:14 Checking that each operation is either debit or credit\nINFO     utils.logger:logger.py:14 All operations are either debit or credit!\nINFO     utils.logger:logger.py:14 Checking that each operation is valid ( &amp;gt; 0)\nINFO     utils.logger:logger.py:14 All operations have valid amount!\nINFO     utils.logger:logger.py:14 Total credit amount is &amp;#x27;74097&amp;#x27;\n&#34;}], &#34;test_balance.py::TestBalanceBusinessLogic::test_corr_accounts_are_different_from_our&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceBusinessLogic::test_corr_accounts_are_different_from_our&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceBusinessLogic::test_corr_accounts_are_different_from_our&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_balance.TestBalanceBusinessLogic object at 0x000001873EFB6FD0&amp;gt;, balance = Balance()\n\n    def test_corr_accounts_are_different_from_our(self, balance: Balance):\n        check_result, check_descr = balance.cor_accounts_are_different_from_our()\n&amp;gt;       assert check_result, \\\n            f&amp;quot;All operations should have different corr account from our! These operations have same corr account: {check_descr}!&amp;quot;\nE       AssertionError: All operations should have different corr account from our! These operations have same corr account: [352, 353, 354]!\nE       assert False\n\ntest_balance.py:50: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     utils.logger:logger.py:14 Checking that operation&amp;#x27;s cor accounts are different from our &amp;#x27;40817_K1&amp;#x27;\nINFO     utils.logger:logger.py:14 Ids of operations, which have same cor account as our &amp;#x27;[352, 353, 354]&amp;#x27;\n\n&#34;}], &#34;test_balance.py::TestBalanceBusinessLogic::test_operation_amounts_are_correct&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceBusinessLogic::test_operation_amounts_are_correct&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceBusinessLogic::test_operation_amounts_are_correct&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     utils.logger:logger.py:14 Checking that each operation is either debit or credit\nINFO     utils.logger:logger.py:14 All operations are either debit or credit!\n\n&#34;}], &#34;test_balance.py::TestBalanceBusinessLogic::test_operation_amounts_are_valid&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceBusinessLogic::test_operation_amounts_are_valid&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceBusinessLogic::test_operation_amounts_are_valid&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     utils.logger:logger.py:14 Checking that each operation is valid ( &amp;gt; 0)\nINFO     utils.logger:logger.py:14 All operations have valid amount!\n\n&#34;}], &#34;test_balance.py::TestBalanceBusinessLogic::test_application_difference_is_correct&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceBusinessLogic::test_application_difference_is_correct&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceBusinessLogic::test_application_difference_is_correct&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_balance.TestBalanceBusinessLogic object at 0x000001873F16DEB0&amp;gt;, application_balances = {&amp;#x27;credit_total&amp;#x27;: 165528, &amp;#x27;debit_total&amp;#x27;: 90713, &amp;#x27;difference&amp;#x27;: 4356}\n\n    def test_application_difference_is_correct(self, application_balances: dict):\n&amp;gt;       assert application_balances[&amp;quot;difference&amp;quot;] == application_balances[&amp;quot;debit_total&amp;quot;] - application_balances[&amp;quot;credit_total&amp;quot;], \\\n            f&amp;quot;Difference between debit and credit amount in application expected to be {application_balances[&amp;quot;debit_total&amp;quot;] - application_balances[&amp;quot;credit_total&amp;quot;]}, but got &amp;#x27;{application_balances[&amp;quot;difference&amp;quot;]}&amp;#x27;!&amp;quot;\nE       AssertionError: Difference between debit and credit amount in application expected to be -74815, but got &amp;#x27;4356&amp;#x27;!\nE       assert 4356 == (90713 - 165528)\n\ntest_balance.py:64: AssertionError\n&#34;}], &#34;test_balance.py::TestBalanceBusinessLogic::test_application_and_balance_total_debit_are_equal&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceBusinessLogic::test_application_and_balance_total_debit_are_equal&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceBusinessLogic::test_application_and_balance_total_debit_are_equal&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_balance.TestBalanceBusinessLogic object at 0x000001873F150D10&amp;gt;, application_balances = {&amp;#x27;credit_total&amp;#x27;: 165528, &amp;#x27;debit_total&amp;#x27;: 90713, &amp;#x27;difference&amp;#x27;: 4356}, balance = Balance()\n\n    def test_application_and_balance_total_debit_are_equal(self, application_balances: dict, balance: Balance):\n        application_total_debit = application_balances[&amp;quot;debit_total&amp;quot;]\n&amp;gt;       assert application_total_debit == balance.total_processed_debit, \\\n            f&amp;quot;Total debit amounts from application and all XML operations should be equal!&amp;quot;\nE       AssertionError: Total debit amounts from application and all XML operations should be equal!\nE       assert 90713 == 60717\nE        +  where 60717 = Balance().total_processed_debit\n\ntest_balance.py:69: AssertionError\n&#34;}], &#34;test_balance.py::TestBalanceBusinessLogic::test_application_and_balance_total_credit_are_equal&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;test_balance.py::TestBalanceBusinessLogic::test_application_and_balance_total_credit_are_equal&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_balance.py::TestBalanceBusinessLogic::test_application_and_balance_total_credit_are_equal&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_balance.TestBalanceBusinessLogic object at 0x000001873F150F30&amp;gt;, application_balances = {&amp;#x27;credit_total&amp;#x27;: 165528, &amp;#x27;debit_total&amp;#x27;: 90713, &amp;#x27;difference&amp;#x27;: 4356}, balance = Balance()\n\n    def test_application_and_balance_total_credit_are_equal(self, application_balances: dict, balance: Balance):\n        application_total_debit = application_balances[&amp;quot;credit_total&amp;quot;]\n&amp;gt;       assert application_total_debit == balance.total_processed_credit, \\\n            f&amp;quot;Total credit amounts from application and all XML operations should be equal!&amp;quot;\nE       AssertionError: Total credit amounts from application and all XML operations should be equal!\nE       assert 165528 == 74097\nE        +  where 74097 = Balance().total_processed_credit\n\ntest_balance.py:74: AssertionError\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;pytest_report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
