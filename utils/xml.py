@@ -8,7 +8,7 @@ class XMLObject:
     def __init__(self, xml_path: str, namespace: str=None, encoding: str ='utf-8'):
         self.xml_path: str = xml_path
         self.tree: etree._ElementTree = self._load_xml_tree(encoding)
-        self.namespace: dict = {"ns": namespace}
+        self.namespace: dict = {"ns": namespace} if namespace is not None else None
 
     def _load_xml_tree(self, encoding) -> etree._ElementTree:
         """Load and parse the XML file."""
@@ -16,17 +16,31 @@ class XMLObject:
             logger.error(f"XML file not found: {self.xml_path}")
             raise FileNotFoundError(f"XML file not found: {self.xml_path}")
         
-        with open(self.xml_path, "r", encoding=encoding) as f:
-            tree = etree.parse(f)
-        return tree
-    
-    def find(self, path: str) -> etree._Element:
+        parser = etree.XMLParser(encoding=encoding)
+        return etree.parse(self.xml_path, parser)
+
+    def get_root_attributes(self) -> dict:
+        return self.tree.getroot().attrib
+
+    def find(self, path: str, elem: etree._Element = None) -> etree._Element:
+        if self.namespace:
+            path = "ns:" + path
+        if elem:
+            return elem.find(path, namespaces=self.namespace)
         return self.tree.find(path, namespaces=self.namespace)
 
-    def find_all(self, path: str) -> List[etree._Element]:
+    def find_all(self, path: str, elem: etree._Element = None) -> List[etree._Element]:
+        if self.namespace:
+            path = "ns:" + path
+        if elem:
+            return elem.findall(path, namespaces=self.namespace)
         return self.tree.findall(path, namespaces=self.namespace)
     
-    def find_text(self, path: str, default = None):
+    def find_text(self, path: str, default = None,  elem: etree._Element = None):
+        if self.namespace:
+            path = "ns:" + path
+        if elem:
+            return elem.findtext(path, default=default, namespaces=self.namespace)
         return self.tree.findtext(path, default=default, namespaces=self.namespace)
     
     def get_element_children_elems(self, elem: etree._Element) -> List[etree._Element]:
@@ -107,10 +121,10 @@ class BalanceXML(XMLObject):
     """ Class for balance XML with specific locators and operations """
     def __init__(self, xml_path: str, namespace: str=None, encoding: str ='utf-8'):
         super().__init__(xml_path, namespace, encoding)
-        self.node_balance_locator = "ns:Ballance"
+        self.node_balance_locator = "Ballance"
         self.node_operation_locator = f"{self.node_balance_locator}/ns:Oper"
-        self.node_status_locator = "ns:Status"
-        self.node_corrAcc_locator = "ns:corAcc"
+        self.node_status_locator = "Status"
+        self.node_corrAcc_locator = "corAcc"
 
     def check_all_operation_nodes_contain_date(self):
         return self.all_given_nodes_contain_attrib(self.node_operation_locator, "date")

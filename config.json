@@ -8,5 +8,15 @@
         "debit_total": 90713,
         "credit_total": 165528,
         "difference": 4356
+    },
+    "ed807_xml": {
+        "path": "20241103_ED807_full.xml",
+        "namespace": "urn:cbr-ru:ed:v2.0",
+        "header_mandatory_attributes": [
+            "EDNo", "EDDate", "EDAuthor"
+        ]
+    },
+    "epd_xml" : {
+        "path": "PacketEPD.xml"
     }
 }

@@ -2,7 +2,7 @@ import pytest
 import json
 import os
 from utils.logger import logger
-from utils.xml import BalanceXML
+from utils.xml import BalanceXML, XMLObject
 from model.Balance import Balance
 
 
@@ -36,10 +36,10 @@ def config(config_path: str):
 
 @pytest.fixture(scope="session")
 def balance_xml_tree(config: dict):
-    """Fixture to parse xml and return xml tree object"""
+    """Fixture to parse balance xml and return XML tree object"""
     xml_path = config["balances_xml"]["path"]
     xml_namespace = config["balances_xml"]["namespace"]
-    return BalanceXML(xml_path, xml_namespace, 'utf-8')
+    return BalanceXML(xml_path, namespace=xml_namespace, encoding='utf-8')
 
 
 @pytest.fixture(scope="session")
@@ -47,6 +47,22 @@ def balance(config, balance_xml_tree: BalanceXML):
     """Fixture for getting 'Balance' model"""
     return Balance(config["corr_account"], balance_xml_tree)
 
+
 @pytest.fixture(scope="session")
 def application_balances(config):
     return config["application_amounts"]
+
+
+@pytest.fixture(scope="session")
+def ed807_xml_tree(config: dict):
+    """Fixture to parse ed807 xml and return XML tree object"""
+    xml_path = config["ed807_xml"]["path"]
+    xml_namespace = config["ed807_xml"]["namespace"]
+    return XMLObject(xml_path, namespace=xml_namespace, encoding='windows-1251')
+
+
+@pytest.fixture(scope="session")
+def epd_xml_tree(config: dict):
+    """Fixture to parse epd xml and return XML tree object"""
+    xml_path = config["epd_xml"]["path"]
+    return XMLObject(xml_path, encoding='windows-1251')

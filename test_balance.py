@@ -11,7 +11,10 @@ class TestBalanceXMLStructure:
         assert search_result is not None, "Balance XML should contain 'Balance' as node"
 
     def test_balance_has_operation_children(self, balance_xml_tree: BalanceXML):
-        unique_child_nodes = balance_xml_tree.get_element_unique_children_names(balance_xml_tree.find("ns:Ballance"))
+        unique_child_nodes = balance_xml_tree.get_element_unique_children_names(
+            balance_xml_tree.find(balance_xml_tree.node_balance_locator)
+        )
+        
         with check:
             assert "Operation" in unique_child_nodes, "Balance node should contain children called 'Operation'"
         with check:
